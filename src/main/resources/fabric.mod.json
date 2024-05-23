@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "liminal",
+	"version": "${version}",
+	"name": "Liminal",
+	"description": "A Liminal Space mod coming to Minecraft",
+	"authors": [
+		"Owner - PrangellPlays"
+	],
+	"license": "PrangellPlays",
+	"icon": "assets/liminal/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.prangellplays.liminal.Liminal"
+		],
+		"client": [
+			"dev.prangellplays.liminal.LiminalClient"
+		],
+		"fabric-datagen": [
+			"dev.prangellplays.liminal.LiminalDataGenerator"
+		]
+	},
+	"mixins": [
+		"liminal.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
